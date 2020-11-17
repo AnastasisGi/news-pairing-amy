@@ -21,6 +21,7 @@ class Headlines {
 
   render() {
     console.log("render function is called");
-    this.element.innerHTML = this.items.map(item => `<p>${item.webTitle}</p>`).join('')
+    this.element.innerHTML = this.items.map(item => `<p><img src="${item.picture}"><a href="${item.webUrl}">${item.webTitle}</a></p>`).join('')
   }
+
 }
